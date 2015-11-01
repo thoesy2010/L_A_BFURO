@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="630.0" prefWidth="872.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poker.app.view.RootLayoutController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+            <Menu fx:id="mnuGame" mnemonicParsing="false" text="Game">
+              <items>
+                <MenuItem mnemonicParsing="false" text="5 card joker poker" />
+                  <MenuItem mnemonicParsing="false" text="5 card wild poker" />
+                  <MenuItem mnemonicParsing="false" text="5 card draw" />
+                  <MenuItem mnemonicParsing="false" text="7 card draw" />
+                  <MenuItem mnemonicParsing="false" text="Texas Hold ‘em" />
+                  <MenuItem mnemonicParsing="false" text="Omaha" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleNew" text="New" />
+              <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Open..." />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Save" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSaveAs" text="Save As..." />
+                  <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Exit" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Statistics">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleShowBirthdayStatistics" text="Show Statistics" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
